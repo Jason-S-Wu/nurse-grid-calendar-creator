@@ -1,0 +1,14 @@
+{
+  "name": "nurse-grid-ical-viewer",
+  "version": "0.1.0",
+  "description": "Simple site to fetch and render an iCal feed with date-range filtering",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "node-ical": "^0.23.1"
+  }
+}

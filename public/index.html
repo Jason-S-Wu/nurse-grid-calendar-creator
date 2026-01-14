@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NurseGrid Schedule Calendar Creator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>NurseGrid Schedule Calendar Creator</h1>
+      <form id="fetchForm">
+        <label
+          >iCal URL
+          <input id="icalUrl" type="url" required placeholder="https://example.com/calendar.ics" />
+        </label>
+        <label
+          >Schedule start
+          <input id="startDate" type="date" />
+        </label>
+        <label
+          >Schedule end
+          <input id="endDate" type="date" />
+        </label>
+        <!-- filter removed per request -->
+        <div style="display: flex; align-items: center; gap: 8px">
+          <button id="fetchBtn" type="submit">Load Events</button>
+          <button id="exportPng" type="button">Export PNG</button>
+        </div>
+      </form>
+
+      <div id="status"></div>
+      <div id="calendarWrap"><div id="calendar"></div></div>
+    </main>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
